@@ -40,7 +40,7 @@ In your markup:
 **Creating a new Chatty object**
 
 ```js
-var chatty = new Chatty(); 
+var chatty = new Chatty(); // Default options
 
 chatty.show();
 ```
