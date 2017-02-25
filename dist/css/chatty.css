@@ -95,7 +95,7 @@
 
 .chatty-message {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #fff;
+    color: inherit;
 }
 
 .chatty-container.bottom {
