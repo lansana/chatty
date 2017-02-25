@@ -16,6 +16,10 @@ A lightweight notification library for broadcasting messages in a user-interface
 
 ## Installation
 
+Bower:
+
+`bower install chatty`
+
 In a browser:
 
 ```html
