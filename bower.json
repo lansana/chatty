@@ -1,0 +1,22 @@
+{
+  "name": "chatty",
+  "homepage": "https://github.com/lansana/chatty",
+  "authors": [
+    "Lansana Camara <lxc5296@gmail.com>"
+  ],
+  "description": "A simple notification library that broadcasts messages in a user-interface.",
+  "main": "index.js",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "notification",
+    "message",
+    "chatty",
+    "validation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}
