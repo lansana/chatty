@@ -72,8 +72,7 @@ var chatty = new Chatty({
     message: '<img src="loader.gif">',
     styles: {
         backgroundColor: '#fff',
-        borderColor: '#fff',
-        boxShadow: '0 2px 25px rgba(0,0,0,0.3)'
+        borderColor: 'rgb(240, 240, 240)'
     },
     renderHTML: true,
     infinite: true
