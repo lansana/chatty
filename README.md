@@ -47,23 +47,6 @@ chatty.show();
 
 ![chatty.js default image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-default.gif)
 
-**Changing the position of your chatty**
-
-Note: all of the examples except this one use the default position, 'bottom right', which spawns
-the chatty from the bottom right corner of the screen. This may not be visible in the GIF's as
-they are all zoomed in.
-
-```js
-var chatty = new Chatty({
-    message: 'I live on the top left corner of the screen!',
-    position: 'top left'
-});
-
-chatty.show();
-```
-
-![chatty.js position image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-position.gif)
-
 **Creating a new Chatty object with custom options**
 ```js
 var chatty = new Chatty({
@@ -81,6 +64,23 @@ chatty.show();
 ```
 
 ![chatty.js custom image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-custom.gif)
+
+**Changing the position of your chatty**
+
+Note: all of the examples except this one use the default position, 'bottom right', which spawns
+the chatty from the bottom right corner of the screen. This may not be visible in the GIF's as
+they are all zoomed in.
+
+```js
+var chatty = new Chatty({
+    message: 'I live on the top left corner of the screen!',
+    position: 'top left'
+});
+
+chatty.show();
+```
+
+![chatty.js position image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-position.gif)
 
 **Rendering HTML inside your chatty**
 
