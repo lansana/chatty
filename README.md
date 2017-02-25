@@ -4,6 +4,12 @@ A lightweight notification library for broadcasting messages in a user-interface
 
 ## Download
 
+#### Bower:
+
+`bower install chatty`
+
+#### Raw source code:
+
 **JavaScript**
 
 - [Full JavaScript (ES5)](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js) ([~4 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js))
@@ -16,11 +22,7 @@ A lightweight notification library for broadcasting messages in a user-interface
 
 ## Installation
 
-Bower:
-
-`bower install chatty`
-
-In a browser:
+#### In a browser:
 
 ```html
 <head>
