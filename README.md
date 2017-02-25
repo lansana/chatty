@@ -92,6 +92,8 @@ var chatty = new Chatty({
     infinite: true
 });
 
+chatty.show();
+
 setTimeout(function() {
     chatty.close();
 }, 2500);
