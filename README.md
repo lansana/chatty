@@ -54,12 +54,12 @@ the chatty from the bottom right corner of the screen. This may not be visible i
 they are all zoomed in.
 
 ```js
-    var chatty = new Chatty({
-        message: 'I live on the top left corner of the screen!',
-        position: 'top left'
-    });
-    
-    chatty.show();
+var chatty = new Chatty({
+    message: 'I live on the top left corner of the screen!',
+    position: 'top left'
+});
+
+chatty.show();
 ```
 
 ![chatty.js position image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-position.gif)
