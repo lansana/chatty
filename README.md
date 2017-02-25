@@ -2,14 +2,12 @@
 
 A lightweight notification library for broadcasting messages in a user-interface.
 
-![chatty.js message](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/show-chatty.gif)
-
 ## Download
 
 **JavaScript**
 
-- [Full JavaScript](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js) ([~4 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js))
-- [Minified Javascript](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.min.js) ([~1 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.min.js))
+- [Full JavaScript (ES5)](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js) ([~4 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js))
+- [Minified Javascript (ES5)](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.min.js) ([~1 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.min.js))
 
 **CSS**
 
