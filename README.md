@@ -2,6 +2,8 @@
 
 A lightweight notification library for broadcasting messages in a user-interface.
 
+[chatty.js default image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-default.gif)
+
 ## Download
 
 **Bower:**
@@ -50,6 +52,7 @@ var chatty = new Chatty({
 ```
 
 **Rendering HTML inside your chatty**
+- Note: any styles referenced in CSS on the HTML you put in Chatty will take effect. This `h1` had top and bottom margins.
 ```js
 var chatty = new Chatty({
     message: '<h1 class="title">This is huge!</h1>',
@@ -63,11 +66,15 @@ var chatty = new Chatty({
 chatty.show();
 ```
 
+[chatty.js huge image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-huge.gif)
+
 **Removing your chatty from the screen**
 - Note: this is only necessary when you use the `infinite` flag.
 ```js
 chatty.close();
 ```
+
+[chatty.js close image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-close.gif)
 
 **Updating your chatty after it's already been created**
 - Note: this will be effective immediately, even if your chatty is already on the page.
