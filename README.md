@@ -2,29 +2,29 @@
 
 A lightweight notification library for broadcasting messages in a user-interface.
 
-![chatty.js default image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-default.gif)
+![chatty.js preview image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-preview.gif)
 
 ## Download
 
-**Bower:**
+Bower:
 
 `bower install chatty`
 
-**Raw source code:**
+Raw source code:
 
-JavaScript
+**JavaScript**
 
 - [Full JavaScript](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js) ([~5 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.js))
 - [Minified Javascript](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.min.js) ([~1 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/js/chatty.min.js))
 
-CSS
+**CSS**
 
 - [Full CSS](https://raw.githubusercontent.com/lansana/chatty/master/dist/css/chatty.css) ([~5 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/css/chatty.css))
 - [Minified CSS](https://raw.githubusercontent.com/lansana/chatty/master/dist/css/chatty.min.css) ([~3 kB](https://raw.githubusercontent.com/lansana/chatty/master/dist/css/chatty.min.css))
 
 ## Installation
 
-### In a browser:
+In your markup:
 
 ```html
 <head>
@@ -35,57 +35,88 @@ CSS
 </body>
 ```
 
-## Usage
+## Usage and examples
 
 **Creating a new Chatty object**
 
 ```js
-var chatty = new Chatty();
+var chatty = new Chatty(); 
+
+chatty.show();
 ```
+
+![chatty.js default image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-default.gif)
 
 **Creating a new Chatty object with custom options**
 ```js
 var chatty = new Chatty({
     message: 'This is my first chatty',
-    //...
+    duration: '7500',
+    styles: {
+        fontSize: '30px',
+        color: '#000',
+        borderColor: '#000',
+        backgroundColor: '#fff'
+    }
 });
-```
 
-**Rendering HTML inside your chatty**
-- Note: any styles referenced in CSS on the HTML you put in Chatty will take effect. This `h1` had top and bottom margins.
-```js
-var chatty = new Chatty({
-    message: '<h1 class="title">This is huge!</h1>',
-    renderHTML: true,
-    //...
-});
-```
-
-**Showing your chatty on the screen**
-```js
 chatty.show();
 ```
 
-![chatty.js huge image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-huge.gif)
+![chatty.js custom image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-custom.gif)
+
+**Rendering HTML inside your chatty**
+
+```js
+var chatty = new Chatty({
+    message: '<img src="loader.gif">',
+    styles: {
+        backgroundColor: '#fff',
+        borderColor: '#fff',
+        boxShadow: '0 2px 25px rgba(0,0,0,0.3)'
+    },
+    renderHTML: true,
+    infinite: true
+});
+
+chatty.show();
+```
+
+![chatty.js html image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-html.gif)
 
 **Removing your chatty from the screen**
-- Note: this is only necessary when you use the `infinite` flag.
+
 ```js
-chatty.close();
+var chatty = new Chatty({
+    message: 'I am immortal',
+    infinite: true
+});
+
+setTimeout(function() {
+    chatty.close();
+}, 2500);
 ```
 
 ![chatty.js close image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-close.gif)
 
 **Updating your chatty after it's already been created**
-- Note: this will be effective immediately, even if your chatty is already on the page.
+
 ```js
-chatty.update({
-    message: 'Error, error, error!',
-    styles: {
-        backgroundColor: 'red'
-    },
+var chatty = new Chatty({
+    message: 'Watch me change!',
     infinite: true
 });
+
+chatty.show();
+
+setTimeout(function () {
+    chatty.update({
+        message: 'Error, error, error!',
+        styles: {
+            backgroundColor: 'red'
+        }
+    });
+}, 3500);
 ```
 
 ![chatty.js update image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-update.gif)
