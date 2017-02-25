@@ -2,7 +2,7 @@
 
 A lightweight notification library for broadcasting messages in a user-interface.
 
-[chatty.js default image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-default.gif)
+![chatty.js default image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-default.gif)
 
 ## Download
 
@@ -66,7 +66,7 @@ var chatty = new Chatty({
 chatty.show();
 ```
 
-[chatty.js huge image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-huge.gif)
+![chatty.js huge image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-huge.gif)
 
 **Removing your chatty from the screen**
 - Note: this is only necessary when you use the `infinite` flag.
@@ -74,7 +74,7 @@ chatty.show();
 chatty.close();
 ```
 
-[chatty.js close image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-close.gif)
+![chatty.js close image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-close.gif)
 
 **Updating your chatty after it's already been created**
 - Note: this will be effective immediately, even if your chatty is already on the page.
