@@ -4,11 +4,11 @@ A lightweight notification library for broadcasting messages in a user-interface
 
 ## Download
 
-### Bower:
+**Bower:**
 
 `bower install chatty`
 
-### Raw source code:
+**Raw source code:**
 
 JavaScript
 
