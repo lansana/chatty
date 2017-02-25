@@ -80,12 +80,15 @@ chatty.close();
 - Note: this will be effective immediately, even if your chatty is already on the page.
 ```js
 chatty.update({
+    message: 'Error, error, error!',
     styles: {
-        backgroundColor: 'blue'
+        backgroundColor: 'red'
     },
     infinite: true
 });
 ```
+
+![chatty.js update image](https://raw.githubusercontent.com/lansana/chatty/master/dist/img/chatty-update.gif)
 
 ## Options
 
